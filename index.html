@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teachable Machine Web App</title>
+</head>
+<body>
+    <h1>Teachable Machine Web App</h1>
+    <input type="file" id="imageUpload" accept="image/*">
+    <img id="uploadedImage" src="" alt="Uploaded Image" style="display:none;">
+    <button id="classifyButton">Classify Image</button>
+    <div id="result"></div>
+
+    <!-- TensorFlow.js and Teachable Machine libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
